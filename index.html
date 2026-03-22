@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prestanite gubiti vrijeme na administraciju. ABSII donosi AI automatizaciju malim poduzećima u Hrvatskoj.">
+    <title>ABSII - AI Automatizacija</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ABSII_Logo.png">
+</head>
+<body>
+    <!-- Cursor Trail Canvas -->
+    <canvas id="magic-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <img src="assets/ABSII_Logo.png" alt="ABSII logo" class="nav-logo">
+            </a>
+            <div class="menu-toggle" aria-label="Toggle navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#problemi">Problemi</a></li>
+                <li><a href="#usluge">Usluge</a></li>
+                <li><a href="#proces">Framework</a></li>
+                <li><a href="#o-meni">O meni</a></li>
+                <li><a href="#cijena">Cijena</a></li>
+                <li><a href="#kontakt" class="nav-cta">Zakaži besplatnu analizu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Final Version -->
+    <section class="hero hero-final">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Logo centered above tagline -->
+                <img src="assets/ABSII_Logo.png" alt="ABSII logo" class="hero-logo">
+                
+                <p class="tagline-final">Process optimization. AI execution.</p>
+                
+                <h1 class="main-headline-final">
+                    Što je najskuplje u vašem poslovanju?<br>
+                    Vrijeme koje gubite na repetitivne zadatke.
+                </h1>
+                
+                <p class="subtitle-final">
+                    Više vremena za ono što je bitno. Manje na ono što AI može.
+                </p>
+                
+                <div class="hero-actions-final">
+                    <a href="#kontakt" class="cta-button">Zakaži besplatnu analizu</a>
+                </div>
+            </div>
+        </div>
+        <!-- Simplified Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Istražite</p>
+        </div>
+    </section>
+
+    <!-- Problems Section - Illustration Style (Option 3) -->
+    <section id="problemi" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Prepoznajete li se?</h2>
+            <p class="section-subtitle text-center">Primjeri problema koje AI rješava</p>
+            
+            <div class="problems-grid-final">
+                <!-- Card 1 - Stomatolog -->
+                <div class="problem-card reveal">
+                    <div class="illustration-area">
+                        <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Calendar Grid -->
+                            <rect x="40" y="50" width="100" height="80" rx="4" fill="none" stroke="#0A2463" stroke-width="2"/>
+                            <line x1="40" y1="70" x2="140" y2="70" stroke="#0A2463" stroke-width="2"/>
+                            <!-- Calendar Lines -->
+                            <line x1="55" y1="70" x2="55" y2="130" stroke="#0A2463" stroke-width="1" opacity="0.3"/>
+                            <line x1="70" y1="70" x2="70" y2="130" stroke="#0A2463" stroke-width="1" opacity="0.3"/>
+                            <line x1="85" y1="70" x2="85" y2="130" stroke="#0A2463" stroke-width="1" opacity="0.3"/>
+                            <line x1="100" y1="70" x2="100" y2="130" stroke="#0A2463" stroke-width="1" opacity="0.3"/>
+                            <line x1="115" y1="70" x2="115" y2="130" stroke="#0A2463" stroke-width="1" opacity="0.3"/>
+                            <line x1="130" y1="70" x2="130" y2="130" stroke="#0A2463" stroke-width="1" opacity="0.3"/>
+                            <!-- Clock Overlay -->
+                            <circle cx="120" cy="110" r="25" fill="#F9FAFB" stroke="#0A2463" stroke-width="2"/>
+                            <line x1="120" y1="110" x2="120" y2="95" stroke="#0A2463" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="120" y1="110" x2="135" y2="110" stroke="#0A2463" stroke-width="2" stroke-linecap="round"/>
+                            <!-- AI Badge -->
+                            <rect x="50" y="100" width="30" height="15" rx="4" fill="#FB8500"/>
+                            <text x="65" y="111" font-family="Arial" font-size="8" fill="white" text-anchor="middle" font-weight="bold">AI</text>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Stomatolog</h3>
+                        <p class="problem-text">⚠️ Zakazivanje termina i potvrde odvlače fokus od pacijenata</p>
+                        <p class="solution-text">✨ Chatbot automatski zakazuje termine i šalje podsjetnike</p>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 - Građevinar -->
+                <div class="problem-card reveal">
+                    <div class="illustration-area">
+                        <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Document -->
+                            <path d="M50 40h60l30 30v70H50z" fill="none" stroke="#0A2463" stroke-width="2"/>
+                            <path d="M110 40v30h30" fill="none" stroke="#0A2463" stroke-width="2"/>
+                            <!-- Checkmarks -->
+                            <circle cx="70" cy="85" r="8" fill="#34A853"/>
+                            <path d="M66 85l3 3 5-5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="70" cy="105" r="8" fill="#34A853"/>
+                            <path d="M66 105l3 3 5-5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="70" cy="125" r="8" fill="#34A853"/>
+                            <path d="M66 125l3 3 5-5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Gear Icon -->
+                            <g transform="translate(125, 125) scale(0.6)">
+                                <circle cx="0" cy="0" r="15" fill="none" stroke="#0A2463" stroke-width="3"/>
+                                <path d="M0 -20v5M0 15v5M-20 0h5M15 0h5M-14 -14l4 4M10 10l4 4M-14 14l4 -4M10 -10l4 -4" stroke="#0A2463" stroke-width="3"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Građevinar</h3>
+                        <p class="problem-text">⚠️ Ponude se rade ručno, klijenti odustaju zbog kašnjenja</p>
+                        <p class="solution-text">✨ Automatska generacija ponuda iz predložaka i podataka</p>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 - Fizioterapeut -->
+                <div class="problem-card reveal">
+                    <div class="illustration-area">
+                        <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Inbox Tray -->
+                            <path d="M40 100h100l10 30H30z" fill="none" stroke="#0A2463" stroke-width="2"/>
+                            <!-- Envelopes -->
+                            <rect x="55" y="85" width="30" height="20" rx="2" fill="white" stroke="#0A2463" stroke-width="1.5"/>
+                            <path d="M55 85l15 10 15-10" fill="none" stroke="#0A2463" stroke-width="1.5"/>
+                            <rect x="85" y="95" width="30" height="20" rx="2" fill="white" stroke="#0A2463" stroke-width="1.5"/>
+                            <path d="M85 95l15 10 15-10" fill="none" stroke="#0A2463" stroke-width="1.5"/>
+                            <!-- Robot Head -->
+                            <rect x="75" y="45" width="30" height="25" rx="5" fill="#4285F4"/>
+                            <circle cx="82" cy="55" r="2" fill="white"/>
+                            <circle cx="98" cy="55" r="2" fill="white"/>
+                            <path d="M82 63h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <!-- Sorting Arrows -->
+                            <path d="M120 45l10 10-10 10M130 55H110" fill="none" stroke="#4285F4" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fizioterapeut</h3>
+                        <p class="problem-text">⚠️ Email kaos - spori odgovori znače izgubljene klijente</p>
+                        <p class="solution-text">✨ AI asistent filtrira mailove i odgovara na FAQ</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="usluge" class="section dark-section">
+        <div class="container section-container">
+            <div class="section-header text-center">
+                <span class="orange-text subtitle-banner">ABSII automatizacija</span>
+                <h2 class="section-title">Magija za vaše poslovanje</h2>
+                <p class="section-subtitle">Rješenja prilagođena hrvatskom tržištu - bez potrebe za novim alatima. Sve radi u pozadini.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon service-icon-1">
+                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+                            <path d="M24 10 V7 M34 14 L36 12 M38 24 H41 M34 34 L36 36 M24 38 V41 M14 34 L12 36 M10 24 H7 M14 14 L12 12" stroke="currentColor" stroke-width="2" />
+                            <path d="M36 8 L37 10 M35 9 H38" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <h3>Automatizacija prodajnog procesa</h3>
+                    <p>Od upita klijenta do automatski kreirane i poslane ponude u samo nekoliko sekundi. Vaši prodajni predstavnici konačno mogu prodavati.</p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon service-icon-2">
+                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 12 H38 V32 H24 L16 38 V32 H10 Z" stroke="currentColor" stroke-width="2" fill="none" />
+                            <circle cx="18" cy="22" r="1.5" fill="currentColor" />
+                            <circle cx="24" cy="22" r="1.5" fill="currentColor" />
+                            <circle cx="30" cy="22" r="1.5" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>Pametni chatboti</h3>
+                    <p>AI agenti koji odgovaraju na upite kupaca 24/7, zakazuju sastanke i rješavaju jednostavne probleme, na savršenom hrvatskom jeziku.</p>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon service-icon-3">
+                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="16" cy="28" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+                            <circle cx="32" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+                            <path d="M22 15 L23 17 M21 16 H24" stroke="currentColor" stroke-width="1" />
+                        </svg>
+                    </div>
+                    <h3>Sinkronizacija aplikacija</h3>
+                    <p>Spajamo vaš CRM, e-mail, kalendar, aplikacije za fakturiranje u jedan moćan, sinkronizirani sustav (make, zapier).</p>
+                </div>
+ 
+                <div class="service-card reveal">
+                    <div class="service-icon service-icon-4">
+                        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 6 H30 L38 14 V42 H14 Z" stroke="currentColor" stroke-width="2" fill="none" />
+                            <path d="M30 6 V14 H38" stroke="currentColor" stroke-width="2" fill="none" />
+                            <path d="M20 26 H32 M20 32 H32 M20 38 H26" stroke="currentColor" stroke-width="1" opacity="0.4" />
+                        </svg>
+                    </div>
+                    <h3>Generiranje sadržaja i izvještaja</h3>
+                    <p>Automatska izrada SEO blogova za vašu web stranicu, dnevnih izvještaja za menadžment, obrade podataka.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABSII Framework Section Condensed Table -->
+    <section id="framework" class="framework-section relative">
+        <div id="proces" style="position: absolute; top: -100px;"></div> <!-- Anchor redirect -->
+        <div class="framework-container-condensed">
+            
+            <!-- Header Section -->
+            <div class="framework-header-condensed">
+                <h2 class="framework-title-condensed">ABSII framework</h2>
+                <p class="framework-subtitle-condensed">Pet koraka od kaosa do kontrole</p>
+            </div>
+
+            <!-- Framework Table Grid -->
+            <div class="framework-grid">
+                
+                <!-- Column 1 - Analiza -->
+                <article class="framework-column" data-step="1">
+                    <div class="column-badge badge-a">A</div>
+                    <h3 class="column-title title-a">Analiza</h3>
+                    <p class="column-subtitle">Mapiramo procese i<br>kvantificiramo gubitke</p>
+                    <ul class="deliverables-compact">
+                        <li><span class="check">✓</span> 45-min analiza</li>
+                        <li><span class="check">✓</span> Vizualni dijagram</li>
+                        <li><span class="check">✓</span> Konkretne brojke</li>
+                    </ul>
+                </article>
+
+                <div class="framework-arrow">&rarr;</div>
+
+                <!-- Column 2 - Blokada -->
+                <article class="framework-column" data-step="2">
+                    <div class="column-badge badge-b">B</div>
+                    <h3 class="column-title title-b">Blokada</h3>
+                    <p class="column-subtitle">Identificiramo što vas<br>najviše koči</p>
+                    <ul class="deliverables-compact">
+                        <li><span class="check">✓</span> Ranking po utjecaju</li>
+                        <li><span class="check">✓</span> ROI projekcija</li>
+                        <li><span class="check">✓</span> Quick win plan</li>
+                    </ul>
+                </article>
+
+                <div class="framework-arrow">&rarr;</div>
+
+                <!-- Column 3 - Sustav -->
+                <article class="framework-column" data-step="3">
+                    <div class="column-badge badge-s">S</div>
+                    <h3 class="column-title title-s">Sustav</h3>
+                    <p class="column-subtitle">Gradimo AI koji<br>rješava problem</p>
+                    <ul class="deliverables-compact">
+                        <li><span class="check">✓</span> Automation blueprint</li>
+                        <li><span class="check">✓</span> Workflow redesign</li>
+                        <li><span class="check">✓</span> Implementacija + test</li>
+                    </ul>
+                </article>
+
+                <div class="framework-arrow">&rarr;</div>
+
+                <!-- Column 4 - Integracija -->
+                <article class="framework-column" data-step="4">
+                    <div class="column-badge badge-i1">I</div>
+                    <h3 class="column-title title-i1">Integracija</h3>
+                    <p class="column-subtitle">Bezbolno uklapanje<br>u workflow</p>
+                    <ul class="deliverables-compact">
+                        <li><span class="check">✓</span> Phased rollout</li>
+                        <li><span class="check">✓</span> Hands-on trening</li>
+                        <li><span class="check">✓</span> 30-60 dana podrška</li>
+                    </ul>
+                </article>
+
+                <div class="framework-arrow">&rarr;</div>
+
+                <!-- Column 5 - Inteligencija -->
+                <article class="framework-column" data-step="5">
+                    <div class="column-badge badge-i2 badge-intelligence">I</div>
+                    <h3 class="column-title title-i2">Inteligencija</h3>
+                    <p class="column-subtitle">AI raste s vašim<br>poslovanjem</p>
+                    <ul class="deliverables-compact">
+                        <li><span class="check">✓</span> Performance dashboard</li>
+                        <li><span class="check">✓</span> Auto-optimizacija</li>
+                        <li><span class="check">✓</span> Adaptive learning</li>
+                    </ul>
+                </article>
+
+            </div>
+
+
+
+            <!-- Closing CTA Section -->
+            <div class="cta-compact">
+                <a href="#kontakt" class="cta-button">Zakaži besplatnu analizu</a>
+                <p class="trust-line-compact">
+                    <span class="trust-check">✓</span> Bez obveza &nbsp;|&nbsp; 
+                    <span class="trust-check">✓</span> 45 minuta &nbsp;|&nbsp; 
+                    <span class="trust-check">✓</span> Konkretni rezultati
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section - Authentic Version -->
+    <section id="o-meni" class="about-authentic">
+        <div class="container about-container">
+            <h2 class="about-title">Zašto mi vjerovati?</h2>
+            
+            <div class="about-content">
+                <p class="about-text">
+                    Cijelu karijeru sam opsjednut procesima.<br>
+                    Gdje sistem zapinje? Kako ga ubrzati? Gdje gubimo vrijeme?
+                </p>
+                
+                <p class="about-text mt-24">
+                    10+ godina rješavam probleme u procesima kroz različite industrije.<br>
+                    Zadnja godina: AI transformacija.
+                </p>
+                
+                <p class="about-text mt-24">
+                    Kad sam otkrio AI alate, shvatio sam:<br>
+                    Implementacija AI alata će transformirati način poslovanja.
+                </p>
+                
+                <h3 class="about-subheading">Moj pristup:</h3>
+                
+                <ul class="about-list">
+                    <li>&rarr; Mapiranje procesa</li>
+                    <li>&rarr; Identifikacija blokada</li>
+                    <li>&rarr; AI implementacija</li>
+                </ul>
+                
+                <p class="about-text mt-32 font-bold">
+                    Ne prodajem AI hype. Rješavam probleme.
+                </p>
+                
+                <p class="about-text mt-24">
+                    Analiziram vaše procese, identificiram gubitke,<br>
+                    dajem vam točan plan automatizacije.
+                </p>
+                
+                <p class="about-guarantee mt-32">
+                    Ako ne vidim značajnu uštedu, ne naplaćujem.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="studije" class="section light-section">
+        <div class="container section-container">
+            <h2 class="section-title text-center">Priče o uspjehu</h2>
+            <p class="section-subtitle text-center">Pogledajte rezultate prave AI transformacije.</p>
+            
+            <div class="case-studies-grid">
+                <div class="case-card">
+                    <div class="case-content">
+                        <h3>Optimus Prime d.o.o.</h3>
+                        <p>Tvrtka za instalaciju solarnih panela. CRM postavljanje, automatizacija obrazaca za HEP i izradu glavnih projekata za sunčane elektrane.</p>
+                        <span class="case-metric">Ušteda: 12h/tjedan</span>
+                    </div>
+                </div>
+                <div class="case-study-card case-study-video">
+                  
+                  <h3>Stomatološka ordinacija Čeko</h3>
+                  
+                  <!-- Video Demo -->
+                  <div class="case-video-wrapper">
+                    <video controls class="case-video" preload="metadata">
+                      <source src="assets/AI_Dental_Assistant_Demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  
+                  <!-- Description -->
+                  <p class="case-description">
+                    AI chatbot za zakazivanje termina povezan s kalendarom. 
+                    WhatsApp integracija šalje automatske podsjetnike pacijentima 
+                    24 sata prije termina.
+                  </p>
+                  
+                  <!-- Results badges -->
+                  <div class="case-results">
+                    <div class="result-badge badge-green">100% dostupnost 24/7</div>
+                    <div class="result-badge badge-blue">Auto-zakazivanje</div>
+                  </div>
+                  
+                  <!-- What video shows - expandable -->
+                  <details class="video-details">
+                    <summary>Što video pokazuje?</summary>
+                    <ul class="video-features">
+                      <li>✅ Pacijent šalje poruku: "Trebam termin"</li>
+                      <li>✅ AI odmah odgovara s dostupnim terminima</li>
+                      <li>✅ Potvrda termina automatska</li>
+                      <li>✅ WhatsApp podsjetnik 24h prije</li>
+                      <li>✅ Sync s Google kalendarom u realnom vremenu</li>
+                    </ul>
+                  </details>
+                  
+                </div>
+                <div class="case-card">
+                    <div class="case-content">
+                        <h3>Aestus</h3>
+                        <p>AI content creation workflow za marketing odjel. Automatizirana proizvodnja sadržaja za različite kanale.</p>
+                        <span class="case-metric">3x brži output</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="cijena" class="section dark-section">
+        <div class="container section-container">
+            <h2 class="section-title text-center">Investicija koja se vraća</h2>
+            <p class="section-subtitle text-center">Nema mjesečnih pretplata za software koji ne koristite. Plaćate samo rezultat.</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Konzultacije i nacrt</h3>
+                    <div class="price">Besplatno</div>
+                    <ul>
+                        <li>Analiza trenutnog stanja</li>
+                        <li>Identifikacija 3 najveća uska grla</li>
+                        <li>Prijedlog AI rješenja</li>
+                        <li>Informativna ponuda</li>
+                    </ul>
+                    <a href="#kontakt" class="cta-button">Zakaži besplatnu analizu</a>
+                </div>
+                
+                <div class="pricing-card featured rainbow-border">
+                    <div class="featured-badge orange-gradient">Najčešći odabir</div>
+                    <h3>Zlatni AI paket</h3>
+                    <div class="price">Po projektu</div>
+                    <ul>
+                        <li>Izrada i implementacija sustava</li>
+                        <li>Integracija API-jeva (make/zapier)</li>
+                        <li>Edukacija vašeg tima</li>
+                        <li>1 mjesec premium podrške</li>
+                        <li>Hosting AI agenta</li>
+                    </ul>
+                    <a href="#kontakt" class="cta-button">Zakaži besplatnu analizu</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Održavanje (opcionalno)</h3>
+                    <div class="price">Mjesečno</div>
+                    <ul>
+                        <li>Optimizacija i nadogradnje</li>
+                        <li>Prioritetna podrška</li>
+                        <li>Monitoring sustava</li>
+                    </ul>
+                    <a href="#kontakt" class="cta-button">Zakaži besplatnu analizu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact-section">
+      <div class="container">
+        
+        <h2>Spremni za transformaciju?</h2>
+        
+        <p class="subtitle">
+          Zakaži besplatnu 30-minutnu ABSII analizu.<br>
+          Identificiram uska grla. Pokazujem točne brojke gubitaka.
+        </p>
+        
+        <!-- Cal.com inline embed -->
+        <div class="cal-inline-wrapper">
+          <div id="cal-booking" style="width:100%;height:800px;overflow:scroll"></div>
+
+        </div>
+        
+        <!-- Fallback contact -->
+        <div class="contact-fallback">
+          <p class="fallback-title">Ili me direktno kontaktiraj:</p>
+          <div class="contact-methods">
+            <p>
+              <span class="icon">📧</span>
+              <a href="mailto:bojan@absii.agency">bojan@absii.agency</a>
+            </p>
+            <p>
+              <span class="icon">📞</span>
+              <a href="tel:+385911107887">+385 91 110 7887</a>
+            </p>
+            <p>
+              <a href="https://linkedin.com/in/bojanantulov" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="linkedin-link">
+                LinkedIn profil →
+              </a>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/bojanantulov" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <p class="footer-text">© 2026 ABSII - AI Transformation. Sva prava pridržana.</p>
+        <p class="footer-text">Powered by ABSII Framework™</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Cal.com embed script -->
+    <script type="text/javascript">
+      (function (C, A, L) { 
+        let p = function (a, ar) { a.q.push(ar); }; 
+        let d = C.document; 
+        C.Cal = C.Cal || function () { 
+          let cal = C.Cal; 
+          let ar = arguments; 
+          if (!cal.loaded) { 
+            cal.ns = {}; 
+            cal.q = cal.q || []; 
+            d.head.appendChild(d.createElement("script")).src = A; 
+            cal.loaded = true; 
+          } 
+          if (ar[0] === L) { 
+            const api = function () { p(api, arguments); }; 
+            const namespace = ar[1]; 
+            api.q = api.q || []; 
+            typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); 
+            return; 
+          } 
+          p(cal, ar); 
+        }; 
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+      
+      Cal("init", {origin:"https://cal.com"});
+      
+      Cal("inline", {
+        elementOrSelector: "#cal-booking",
+        calLink: "bojan-absii.agency/30min",
+        config: {"theme":"light"}
+      });
+    </script>
+</body>
+</html>
